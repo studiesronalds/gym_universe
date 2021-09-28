@@ -1,0 +1,6 @@
+version: '2'
+services:
+    sample:
+        image: localhost:5000/universe:jupyter
+        ports:
+            - 8888:8888

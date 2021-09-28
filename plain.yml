@@ -1,0 +1,7 @@
+version: '2'
+services:
+    sample:
+        image: localhost:5000/universe
+        volumes:
+            - ./sqf:/opt/sqf
+        command: ["sleep","infinity"]
