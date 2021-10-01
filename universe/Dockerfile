@@ -10,12 +10,15 @@ RUN apt-get update; apt-get install -y tmux htop cmake golang libjpeg-dev
 
 RUN pip install "gym[all]"; \
 	pip install universe; \
-	pip install pyglet==1.3.2;
+	pip install pyglet==1.3.2; \
+    pip install nltk;
     
 RUN pip install pyvirtualdisplay; \
 	apt-get install -y xvfb; \
 	pip install gym[Box_2D]; \
 	pip install Box2D; \
     pip install gym-notebook-wrapper; \
-    apt install -y freeglut3-dev;
+    apt install -y freeglut3-dev; \
+    pip install scikit-learn scipy; \
+    pip install pandas;
 
